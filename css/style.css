@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://img.freepik.com/free-photo/asphalt-road-texture-in-dark-gray-color_1017-20231.jpg?w=2000) ;
+  background-size: 300px;
+}
+.gallery {
+  margin: 30px 30px;
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-areas: 
+  "q w r t" 
+  "y y r u" 
+  "e i o o"
+  "e l l p";
+  gap: 20px;
+}
+.container {
+  display: flex;
+}
+.photo {
+  display: flex;
+  border-radius: 20px;
+  padding: 150px;
+  transition: 1.2s;
+}
+.photo:nth-child(1) {
+  grid-area: q;
+  background-image: url(../img/nate-johnston-NWqpveNFM4E-unsplash.jpg) ;
+  background-size: 350px;
+}
+.photo:nth-child(2) {
+  grid-area: w;
+  background-image: url(../img/goh-rhy-yan-f_SDCASisgs-unsplash.jpg);
+  background-size: 400px;
+}
+.photo:nth-child(3) {
+  grid-area: r;
+  background-image: url(../img/karl-kohler-Hf1rAKkfMAg-unsplash.jpg);
+  background-size: 500px ;
+}
+.photo:nth-child(4) {
+  grid-area: t;
+  background-image: url(../img/cash-macanaya-TSNb7MMBT1w-unsplash.jpg);
+  background-size: 350px;
+}
+.photo:nth-child(5) {
+  grid-area: y;
+  background-image: url(../img/peter-broomfield-m3m-lnR90uM-unsplash.jpg);
+  background-size: 720px;
+}
+.photo:nth-child(6) {
+  grid-area: u;
+  background-image: url(../img/maxime-renard-4rrMwSIL-i4-unsplash.jpg);
+  background-size: 350px;
+}
+.photo:nth-child(7) {
+  grid-area: i;
+  background-image: url(../img/tim-mossholder-VurHDpO4VYI-unsplash.jpg);
+  background-size: 500px;
+}
+.photo:nth-child(8) {
+  grid-area: o;
+  background-image: url(../img/aaron-huber-8qYE6LGHW-c-unsplash.jpg);
+  background-size: 720px;
+}
+.photo:nth-child(9) {
+  grid-area: e;
+  background-image: url(../img/kenny-eliason-FcyipqujfGg-unsplash.jpg);
+  background-size: 530px;
+}
+.photo:nth-child(10) {
+  grid-area: l;
+  background-image: url(../img/marc-kleen-h8UQV31X5AI-unsplash.jpg);
+  background-size: 730px;
+}
+.photo:nth-child(11) {
+  grid-area: p;
+  background-image: url(../img/olav-tvedt-6lSBynPRaAQ-unsplash.jpg);
+  background-size: 450px;
+}
+.photo:nth-child(1).hover {
+  transform: scale(2);
+}
+.nazvaniya {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-family: 'Alumni Sans Inline One', cursive;
+  font-size: 100px;
+  color: rgb(251, 255, 0);
+}
+@media (max-width: 1300px) {
+   .gallery {
+    grid-template-areas: 
+    "q w"
+    "y y"
+    "e r"
+    "e r"
+    "o o"
+    "l l"
+    "t i"
+    "u p";
+  grid-template-columns: 1fr 1fr; 
+  }
+}
+@media (max-width: 700px) {
+  .gallery {
+   grid-template-areas: 
+   "q "
+   "y "
+   "e "
+   "e "
+   "o "
+   "l "
+   "t "
+   "u "
+   "w"
+   "r"
+   "r"
+   "i"
+   "p";
+ grid-template-columns: 1fr; 
+ }
+}
